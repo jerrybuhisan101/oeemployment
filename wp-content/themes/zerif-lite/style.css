@@ -1532,9 +1532,11 @@ object {
 	margin-top: 15px;
 	margin-bottom: 0;
 	padding-bottom: 10px;
-	font-size: 45px;
+/*	font-size: 45px;*/
+font-size: 37px;
 	line-height: 40px;
 	text-transform: uppercase;
+	    font-weight: 500;
 }
 .section-header .section-legend {
 	margin-bottom: 0;
@@ -2047,7 +2049,7 @@ ul.nav > li.current_page_item.current > a:before {
 }
 .focus {
 	overflow: hidden;
-	padding-bottom: 100px;
+/*	padding-bottom: 100px;*/
 	background: #fff;
 }
 .focus .row {
@@ -2702,7 +2704,7 @@ ul.nav > li.current_page_item.current > a:before {
 -----------------------------------------*/
 
 .our-team {
-	padding-top: 100px;
+	padding-top: 14px;
 	padding-bottom: 66px;
 	background: #fff;
 }
@@ -6918,3 +6920,14 @@ body.custom-background {
 }
 
 /* END Nivo slider basic styling */
+
+/*CUSTOM STYLING*/ 
+
+
+
+/*END OF CUSTOM STYLING*/ 
+
+#ribbon_bottom, #ribbon_right {
+
+	display: none !important;
+}
