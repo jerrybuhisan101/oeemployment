@@ -14,9 +14,39 @@ echo '<section class="our-team" id="team">';
 	echo '<div class="container">';
 
 		echo '<div class="section-header">'; ?>
+	<div class= "container">
+		<div class ="row">
+			<div class ="col-sm-6">
+				<div class = "teaching-english">
+					<div class = "teaching-title">
+						<a href = ""><h2>Teaching English at Ocean Edu</h2></a>
+					</div>
+					<div class = "content1">
+						<div class = "text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus orci, finibus ac eleifend in, commodo sit amet orci. Suspendisse ullamcorper lorem leo, fermentum sagittis mauris eleifend ut. Duis id dolor sapien. 
+						</div>
+						<ul class = "text-bullets">
+							<li class ="asdasd">Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- end of 1st column -->
 
-			<h2>asdasdasdasd</h2> 
-			<p>asdasdasdas</p>
+			<div class="col-sm-6">
+					<div class = "teaching-title">
+						<a href = ""><h2>Join Our Team</h2></a>
+					</div>
+					<div class = "content2">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus orci, finibus ac eleifend in, commodo sit amet orci. Suspendisse ullamcorper lorem leo, fermentum sagittis mauris eleifend ut. Duis id dolor sapien. 
+					</div>
+					<div class =""></div>
+			</div>
+		</div>
+	</div>
 <?php
 		echo '</div>';
 
