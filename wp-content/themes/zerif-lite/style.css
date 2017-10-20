@@ -6931,3 +6931,9 @@ body.custom-background {
 
 	display: none !important;
 }
+
+.testimonial {
+    padding-top: 3% !important;
+    background:#33322f !important;
+
+}
