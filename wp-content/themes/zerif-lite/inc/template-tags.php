@@ -241,7 +241,7 @@ function zerif_our_focus_header_title_function() {
 	}
 
 	if ( ! empty( $zerif_ourfocus_title ) ) :
-		echo '<h2 class="dark-text">' . wp_kses_post( $zerif_ourfocus_title ) . '</h2>';
+		echo '<h2 class="dark-text big-title">' . wp_kses_post( $zerif_ourfocus_title ) . '</h2>';
 	elseif ( is_customize_preview() ) :
 		echo '<h2 class="dark-text zerif_hidden_if_not_customizer"></h2>';
 	endif;
