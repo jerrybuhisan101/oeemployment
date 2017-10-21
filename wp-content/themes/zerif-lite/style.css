@@ -1595,7 +1595,8 @@ font-size: 29px;
 }
 .header-content-wrap {
 	position: relative;
-	padding: 285px 0 210px;
+/*	padding: 285px 0 210px;*/
+    padding: 190px 0 197px;
 	background: rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
 	box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
@@ -1648,14 +1649,14 @@ font-size: 29px;
 	text-align: left;
 }
 #main-nav {
-	position: fixed;
+	position: relative;
 	z-index: 1000;
 	width: 100%;
 	min-height: 75px;
 	margin-bottom: 0;
 }
 #main-nav.fixed {
-	position: fixed;
+	position: relative;
 	top: 0;
 }
 .navbar-inverse .navbar-nav {
@@ -6934,7 +6935,7 @@ body.custom-background {
 
 }
 
-/*END OF CUSTOM STYLING*/ 
+
 
 .search_jobs {
 background: #00b3f1 !important;
@@ -6959,3 +6960,37 @@ color: #404040 !important;
 
 }
 
+ul.sub-menu {
+
+	font-size:14px !important;
+}
+
+.header-top{
+	    background: #171852;;
+	    height: 47px;
+}
+
+.top-content{
+	    padding-top: 2%;
+	    color:#ffffff;
+}
+
+.social {
+		font-size: 27px;
+}
+
+.top-content a {
+	color:#ffffff;
+	text-transform: uppercase;
+    padding-right: 1%;
+    border-right: 2px solid;
+}
+
+.top-content a:hover {
+	color:#00b9f9;
+}
+
+.top-content span {
+	    padding-left: 1%;
+}
+/*END OF CUSTOM STYLING*/ 

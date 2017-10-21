@@ -60,7 +60,30 @@ if ( is_front_page() && ! is_customize_preview() ) :
 
 <header id="home" class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 
+<!-- start custom -->
+<div class = "header-top">
+<div class ="container">
+	<div class = "row">
+		<div class = "col-sm-8">
+		<div class ="top-content">	
+			<a href = "http://ocean.edu.vn">Ocean Edu Vietnam</a><span>Vietnam's Biggest English Language Center</span>
+		</div>
+		</div>
+		<div class = "col-sm-4">
+			<div class="social">
+            	<a href="https://www.facebook.com/OceanEduVietNam/" class="ic-face" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/edu_ocean" class="ic-twitter" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCutkhO_UB3kTuPtJCiaQY-g" class="ic-youtube" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/ocean-edu-vi%E1%BB%87t-nam?trk=biz-companies-cym" class="ic-googleplus" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+	</div>
+</div>	
+</div>
+<!-- end custom -->
+
 	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+
 
 		<div class="container">
 
