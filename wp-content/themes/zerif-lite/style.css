@@ -1652,7 +1652,7 @@ font-size: 29px;
 	position: relative;
 	z-index: 1000;
 	width: 100%;
-	min-height: 75px;
+	min-height: 121px;
 	margin-bottom: 0;
 }
 #main-nav.fixed {
@@ -2706,7 +2706,7 @@ ul.nav > li.current_page_item.current > a:before {
 
 .our-team {
 	padding-top: 14px;
-	padding-bottom: 66px;
+	/*padding-bottom: 66px;*/
 	background: #fff;
 }
 .team-member {
@@ -7000,11 +7000,89 @@ ul.sub-menu {
 	    background: #171852;
 	    height: 47px;
 }
+
+#main-nav {
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+	min-height: 121px !important;
+	margin-bottom: 0;
 }
 
-.fa{ 
+
+}
+
+.fa-facebook-official, .fa-twitter-square, .fa-youtube-square, .fa-linkedin-square   { 
 
 color:#ffffff;
 }
 
+
+
+/*Middle text */
+.teaching-english
+{
+	text-align:left;
+}
+
+
+ul.text-bullets{
+	margin: 1em 0 1em 1em;
+}
+
+.teaching-title{
+	text-align: left;
+}
+
+.content2 {
+	text-align: left;
+}
+
+.teaching-english2 {
+	text-align: left;
+}
+
+.teaching-title a h2 {
+	color: white;
+    background: #0887b3;
+    padding: 2px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.teaching-english .content1 {
+	padding-top:3%;
+}
+
+.teaching-english2 .content2 {
+	padding-top: 3%;
+}
+
+
+
+.testimonial .container .section-header {
+
+	padding-bottom: 2%;
+	text-align: left !important;
+	padding-left:1% !important;
+}
+
+.testimonial {
+background:none !important;
+padding-top: 3% !important;
+}
+
+.testimonial .container .section-header h2 {
+
+color: #0096ca;
+padding-left: 2%;
+}
+
+
+.feedback-box {
+background: #dedede !important;
+
+}
 /*END OF CUSTOM STYLING*/ 
