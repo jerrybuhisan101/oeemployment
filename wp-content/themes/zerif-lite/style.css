@@ -6966,8 +6966,8 @@ ul.sub-menu {
 }
 
 .header-top{
-	    background: #171852;;
-	    height: 47px;
+	    background: #171852;
+	    height: auto;
 }
 
 .top-content{
@@ -6993,4 +6993,18 @@ ul.sub-menu {
 .top-content span {
 	    padding-left: 1%;
 }
+
+
+@media only screen  and (min-width : 1224px) {
+.header-top{
+	    background: #171852;
+	    height: 47px;
+}
+}
+
+.fa{ 
+
+color:#ffffff;
+}
+
 /*END OF CUSTOM STYLING*/ 
