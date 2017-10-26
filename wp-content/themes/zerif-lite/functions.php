@@ -1924,3 +1924,12 @@ function zerif_bb_upgrade_link() {
 }
 
 add_filter( 'fl_builder_upgrade_url', 'zerif_bb_upgrade_link' );
+
+function additional_custom_styles() {
+
+    /*Enqueue The Styles*/
+    wp_enqueue_style( 'themename', get_template_directory_uri() . '/jerry/styles.css' );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );

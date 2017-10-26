@@ -19,7 +19,7 @@ echo '<section class="our-team" id="team">';
 			<div class ="col-sm-6">
 				<div class = "teaching-english">
 					<div class = "teaching-title">
-						<a href = ""><h2>Teaching English at Ocean Edu</h2></a>
+						<h3>Teaching English at Ocean Edu</h3>
 					</div>
 					<div class = "content1">
 						<div class = "text">
@@ -39,7 +39,7 @@ echo '<section class="our-team" id="team">';
 			<div class="col-sm-6">
 				<div class = "teaching-english2">
 					<div class = "teaching-title">
-						<a href = ""><h2>Join Our Team</h2></a>
+						<h3>Join Our Team</h3>
 					</div>
 					<div class = "content2">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus orci, finibus ac eleifend in, commodo sit amet orci. Suspendisse ullamcorper lorem leo, fermentum sagittis mauris eleifend ut. Duis id dolor sapien. 
@@ -47,7 +47,7 @@ echo '<section class="our-team" id="team">';
 					<div class ="">asdasd</div>
 				</div>
 			</div>
-		</div>
+		</div>D
 	</div>
 <?php
 		echo '</div>';
