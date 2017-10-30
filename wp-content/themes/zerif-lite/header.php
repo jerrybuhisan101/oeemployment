@@ -2,9 +2,9 @@
 /**
 * The Header for our theme.
 * Displays all of the <head> section and everything up till <div id="content">
-	*
-	* @package zerif-lite
-	*/
+		*
+		* @package zerif-lite
+		*/
 	?><!DOCTYPE html>
 	<html <?php language_attributes(); ?>>
 		<head>
@@ -28,7 +28,7 @@
 					$zerif_disable_preloader = get_theme_mod( 'zerif_disable_preloader' );
 					if ( isset( $zerif_disable_preloader ) && ($zerif_disable_preloader != 1) ) :
 						echo '<div class="preloader">';
-								echo '<div class="status">&nbsp;</div>';
+									echo '<div class="status">&nbsp;</div>';
 						echo '</div>';
 						endif;
 					endif;
@@ -43,12 +43,12 @@
 							<div class = "header-top">
 								<div class ="container">
 									<div class = "row">
-										<div class = "col-sm-8">
+										<div class = "col-sm-8" style="text-align: left;">
 											<div class ="top-content">
-												<a href = "http://ocean.edu.vn">Ocean Edu Vietnam</a><span>Vietnam's Biggest English Language Center</span>
+												<a href = "http://ocean.edu.vn"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<b>Ocean Edu</b></a><span>Vietnam's Biggest English Language Center</span>
 											</div>
 										</div>
-										<div class = "col-sm-4">
+										<div class = "col-sm-4" style="text-align: right;">
 											<div class="social">
 												<a href="https://www.facebook.com/OceanEduVietNam/" class="ic-face" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 												<a href="https://twitter.com/edu_ocean" class="ic-twitter" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
@@ -100,10 +100,7 @@
 													</div> <!-- /.container -->
 													<?php zerif_after_header_container_trigger(); ?>
 												</div>
-
-
 												<?php if( !is_front_page() ) { //if we are not on the front page ?>
-
 												<div class = "breadcrumbs">
 													<div class = "container">
 														<div class ="bcn-wrapper">
@@ -113,7 +110,9 @@
 														}?></div>
 													</div>
 												</div>
-<?php } ?>
-											
+												<?php } ?>
+												
 												<!-- /#main-nav -->
 												<!-- / END TOP BAR -->
+
+												

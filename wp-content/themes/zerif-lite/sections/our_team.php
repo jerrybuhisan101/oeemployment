@@ -19,19 +19,19 @@ echo '<section class="our-team" id="team">';
 			<div class ="col-sm-6">
 				<div class = "teaching-english">
 					<div class = "teaching-title">
-						<h3>Teaching English at Ocean Edu</h3>
+						<h3>Why teach at Ocean Edu?</h3>
 					</div>
 					<div class = "content1">
-						<div class = "text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus orci, finibus ac eleifend in, commodo sit amet orci. Suspendisse ullamcorper lorem leo, fermentum sagittis mauris eleifend ut. Duis id dolor sapien. 
-						</div>
-						<ul class = "text-bullets">
+					<div class = "video-ocean">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/VJZmOE52r8U?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+						<!-- <ul class = "text-bullets">
 							<li class ="asdasd">Lorem ipsum dolor sit amet</li>
 							<li>Lorem ipsum dolor sit amet</li>
 							<li>Lorem ipsum dolor sit amet</li>
 							<li>Lorem ipsum dolor sit amet</li>
 							<li>Lorem ipsum dolor sit amet</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
 			</div> <!-- end of 1st column -->
@@ -42,12 +42,19 @@ echo '<section class="our-team" id="team">';
 						<h3>Join Our Team</h3>
 					</div>
 					<div class = "content2">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus orci, finibus ac eleifend in, commodo sit amet orci. Suspendisse ullamcorper lorem leo, fermentum sagittis mauris eleifend ut. Duis id dolor sapien. 
+							<ul class = "text-bullets">
+							<li class ="asdasd">Commitment to employees and customer</li>
+							<li>Great benefits and competitive salary</li>
+							<li>Regular Training and Assestments</li>
+							<li>World Class teaching facilities</li>
+							<li>and many more...</li>
+						</ul> 
 					</div>
-					<div class ="">asdasd</div>
+					<div class="qualified"><h3><a href ="/"><i class="fa fa-hand-o-right" aria-hidden="true" style="padding-right:2%;"></i>See our qualifications.</a></h3></div>
+					<a href=""><div class ="button2">Apply Now!</div></a>
 				</div>
 			</div>
-		</div>D
+		</div>
 	</div>
 <?php
 		echo '</div>';
