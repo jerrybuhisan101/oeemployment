@@ -151,12 +151,12 @@ ul, ol {
 /* Selection colours (easy to forget) */
 ::selection {
 	color: #fff;
-	background: #fc6d6d;
+	background: #2ac8ff;
 }
 
 ::-moz-selection {
 	color: #fff;
-	background: #fc6d6d;
+	background: #2ac8ff;
 }
 
 a {
@@ -170,7 +170,7 @@ a, a:hover {
 }
 
 a:hover {
-	color: #cb4332;
+	color: #2ac8ff;
 }
 
 p {
@@ -1138,7 +1138,7 @@ a:hover, a:focus, a:active {
 	width: 10%;
 	height: 2px;
 	margin: auto;
-	background: #00b3f1;
+	// background: #00b3f1;
 	content: "";
 }
 
@@ -3723,7 +3723,7 @@ article .posted-on a:hover {
 	width: 10%;
 	height: 2px;
 	margin: auto;
-	background: #00b3f1;
+	// background: #00b3f1;
 	content: "";
 }
 
