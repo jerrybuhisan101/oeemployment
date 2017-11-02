@@ -4,11 +4,21 @@ a:active {
   color: #2ac8ff;
 }
 .header #main-nav {
-  background: #dcdcdc;
+  background: url(http://nanohosting.in/wp-content/uploads/2016/01/E280ACE280ACE280ACE280ACE2…280ACE280ACE280ACE280ACE280ACwhite-background-hd-wallpapers-and-images.jpg);
   border-bottom: 1px solid #cecece;
+  background-size: cover;
+}
+.sub-menu {
+  width: 277px !important;
+}
+.navbar-inverse .navbar-nav ul.sub-menu li a {
+  font-size: 15px !important;
 }
 .latest-news .container .section-header {
   text-align: center;
+}
+.teaching-english {
+  padding-right: 9% !important;
 }
 .teaching-english2 {
   background: url(http://localhost/oeemployment/wp-content/uploads/2017/10/monre2.png);
@@ -103,11 +113,46 @@ a:active {
 #content .container .sidebar-wrap {
   background: #efefef;
   border-left: none;
-  padding: 0;
+  padding: 0 !important;
+}
+.sidebar-custom ul#navigation {
+  float: left;
+  width: 100%;
+}
+.sidebar-custom ul#navigation li {
+  margin: 0;
+  margin-left: 3%;
+  padding-left: 10px;
+  text-align: left;
+  list-style: none;
+  background: #171852;
+  border-bottom: 1px solid #495c6e;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+}
+.sidebar-custom ul#navigation li a {
+  display: block;
+  padding: 14px 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+.sidebar-custom ul#navigation li a:hover {
+  color: #ffffff;
+}
+.sidebar-custom ul#navigation li.active {
+  background: #e5901a;
+}
+.sidebar-custom ul#navigation li:hover {
+  background: #e5901a;
 }
 .breadcrumbs {
   width: 100%;
   z-index: 100;
+  background: #dedede;
+  padding-bottom: 5px;
 }
 .breadcrumbs .container .bcn-wrapper {
   float: left;
@@ -118,17 +163,30 @@ a:active {
   background: #171852;
 }
 .position h3 {
-  color: #171852;
+  color: #333;
   font-size: 20px;
 }
+.position .company {
+  color: #333 !important;
+  font-size: 12px;
+}
+.location {
+  color: #333 !important;
+  font-size: 14px !important;
+}
+ul.meta li.date time {
+  color: #333;
+  font-size: 13px;
+}
 ul.meta li.job-type {
-  color: #171852;
+  color: #333;
 }
 .position h3 {
   font-weight: bold;
 }
 ul.job_listings li a {
   font-size: 15px !important;
+  border-bottom: 1px solid #dedede;
 }
 #footer {
   color: #ffffff;
@@ -170,4 +228,7 @@ ul.list-bottom2 li a {
 }
 .green-btn {
   background: #171852 !important;
+}
+.content-left-wrap {
+  padding-top: 27px !important;
 }

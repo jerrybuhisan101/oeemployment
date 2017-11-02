@@ -1,4 +1,16 @@
 
+ ### v2.2.3 - 2017-10-24 
+ **Changes:** 
+ * Improves compatibility with Hestia theme.
+* Adds option to set form label classes.
+ 
+ ### v2.2.2 - 2017-10-20 
+ **Changes:** 
+ * Hide email entries in frontend queries.
+* Adds filter for form attributes.
+* Fix issue with attachment fields not working when spam trap is active. 
+* Adds support for more integrations in the pro version.
+ 
  ### v2.2.1 - 2017-10-10 
  **Changes:** 
  * Fix issue for multiple forms on the same page.
