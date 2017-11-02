@@ -232,3 +232,10 @@ ul.list-bottom2 li a {
 .content-left-wrap {
   padding-top: 27px !important;
 }
+h4.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: inherit;
+  font-weight: bold;
+}
