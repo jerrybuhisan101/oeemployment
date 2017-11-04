@@ -1040,7 +1040,7 @@ a:hover, a:focus, a:active {
 	width: 4px;
 	height: 4px;
 	margin-top: 11px;
-	background: #e9e9e9;
+	background: none;
 	content: "";
 }
 
@@ -1540,7 +1540,7 @@ embed, iframe, object {
 .header-content-wrap {
 	position: relative;/*	padding: 285px 0 210px;*/
 	padding: 190px 0 197px;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.19);
 	-webkit-box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
 	box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
 }
@@ -7299,7 +7299,7 @@ ul.sub-menu {
 }
 
 .header-top {
-	background: #171852;
+	
 	height: auto;
 }
 
@@ -7329,7 +7329,7 @@ ul.sub-menu {
 
 @media only screen  and (min-width:1224px) {
 	.header-top {
-		background: #171852;
+		
 		height: 47px;
 	}
 

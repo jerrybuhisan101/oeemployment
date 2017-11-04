@@ -23,7 +23,7 @@ echo '<section class="testimonial" id="testimonials">';
 
 		echo '</div>';
 
-		echo '<div class="row" data-scrollreveal="enter right after 0s over 1s">';
+		echo '<div class="row" >';
 
 			echo '<div class="col-md-12">';
 

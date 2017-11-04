@@ -1,4 +1,4 @@
-@oceancolor: #00b3f1;
+@oceancolor: ;;
 @normalcolor: #404040;
 
 // links
@@ -11,6 +11,10 @@ a:hover, a:focus, a:active {
 
 .header {
 	.header-top {
+	background: #008fd4; /* Old browsers */
+    background: -moz-linear-gradient(left, #008fd4 0%, #00aeef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #008fd4 0%,#00aeef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #008fd4 0%,#00aeef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
 
 	#main-nav {
@@ -104,7 +108,7 @@ a:hover, a:focus, a:active {
 	.testimonial {
 		padding-bottom: 1%;
 		padding-top: 1%;
-		background: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+		background: -webkit-linear-gradient(90deg, #008fd4 0%, #2c8cb3 100%);
 
 		.container {
 			.section-header {
@@ -213,12 +217,16 @@ a:hover, a:focus, a:active {
 			text-align: left;
 			list-style: none;
 			list-style: none;
-			background: #171852;
-			border-bottom: 1px solid #495c6e;
+			// background: #171852;
+			border-bottom: 1px solid #ffffff;
 			position: relative;
 			transition: all 0.5s ease 0s;
 			-moz-transition: all 0.5s ease 0s;
 			-webkit-transition: all 0.5s ease 0s;
+			background: #008fd4; /* Old browsers */
+    background: -moz-linear-gradient(left, #008fd4 0%, #00aeef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #008fd4 0%,#00aeef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #008fd4 0%,#00aeef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 			a {
 				display: block;
@@ -273,7 +281,11 @@ a:hover, a:focus, a:active {
 	form.job_filters {
 		.search_jobs {
 			// background: #00b3f1;
-			background: #171852;
+			// background: #171852;
+				background: #008fd4; /* Old browsers */
+    background: -moz-linear-gradient(left, #008fd4 0%, #00aeef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #008fd4 0%,#00aeef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #008fd4 0%,#00aeef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		}
 
 	}
@@ -434,4 +446,31 @@ h4.panel-title {
 .entry-content p {
 	text-align: left;
 	font-size: 14px !important;
+}
+
+
+
+// WIDGETS
+
+.widget li:before {
+	background:none !important;
+}
+
+.custom-html-widget {
+	.sidebar-custom {
+	padding-top: 5%;
+    background: white;
+    box-shadow: black;
+    margin-left: -3%;
+    margin-right: 0px;
+}
+
+}
+
+
+#media_image-2{
+	padding-top: 8% !important;
+	img{
+		    width: 100% !important;
+	}
 }

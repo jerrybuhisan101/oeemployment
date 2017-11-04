@@ -933,7 +933,7 @@ if ( ! class_exists( 'zerif_ourfocus' ) && zerif_check_if_old_version_of_theme()
 
 			echo $before_widget;
 
-			echo '<div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">';
+			echo '<div class="col-lg-3 col-sm-3 focus-box">';
 
 			if ( ! empty( $instance['image_uri'] ) && ( $instance['image_uri'] != 'Upload Image' ) ) {
 				if ( ! empty( $instance['link'] ) ) {

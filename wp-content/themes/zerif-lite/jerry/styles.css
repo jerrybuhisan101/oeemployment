@@ -3,6 +3,16 @@ a:focus,
 a:active {
   color: #2ac8ff;
 }
+.header .header-top {
+  background: #008fd4;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #008fd4 0%, #00aeef 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #008fd4 0%, #00aeef 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #008fd4 0%, #00aeef 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
 .header #main-nav {
   background: url(http://nanohosting.in/wp-content/uploads/2016/01/E280ACE280ACE280ACE280ACE2…280ACE280ACE280ACE280ACE280ACwhite-background-hd-wallpapers-and-images.jpg);
   border-bottom: 1px solid #cecece;
@@ -48,7 +58,7 @@ a:active {
 .site-content .testimonial {
   padding-bottom: 1%;
   padding-top: 1%;
-  background: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+  background: -webkit-linear-gradient(90deg, #008fd4 0%, #2c8cb3 100%);
 }
 .site-content .testimonial .container .section-header {
   padding-bottom: 2%;
@@ -125,12 +135,19 @@ a:active {
   padding-left: 10px;
   text-align: left;
   list-style: none;
-  background: #171852;
-  border-bottom: 1px solid #495c6e;
+  border-bottom: 1px solid #ffffff;
   position: relative;
   transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
+  background: #008fd4;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #008fd4 0%, #00aeef 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #008fd4 0%, #00aeef 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #008fd4 0%, #00aeef 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .sidebar-custom ul#navigation li a {
   display: block;
@@ -160,7 +177,14 @@ a:active {
   font-size: 13px;
 }
 .job_listings form.job_filters .search_jobs {
-  background: #171852;
+  background: #008fd4;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #008fd4 0%, #00aeef 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #008fd4 0%, #00aeef 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #008fd4 0%, #00aeef 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .position h3 {
   color: #333;
@@ -242,4 +266,20 @@ h4.panel-title {
 .entry-content p {
   text-align: left;
   font-size: 14px !important;
+}
+.widget li:before {
+  background: none !important;
+}
+.custom-html-widget .sidebar-custom {
+  padding-top: 5%;
+  background: white;
+  box-shadow: black;
+  margin-left: -3%;
+  margin-right: 0px;
+}
+#media_image-2 {
+  padding-top: 8% !important;
+}
+#media_image-2 img {
+  width: 100% !important;
 }
