@@ -31,7 +31,7 @@ a:active {
   padding-right: 9% !important;
 }
 .teaching-english2 {
-  background: url(http://localhost/oeemployment/wp-content/uploads/2017/10/monre2.png);
+  background: url(/wp-content/uploads/2017/10/monre2.png);
   background-size: cover;
   padding-bottom: 6%;
   line-height: 2.1;
@@ -58,7 +58,7 @@ a:active {
 .site-content .testimonial {
   padding-bottom: 1%;
   padding-top: 1%;
-  background: -webkit-linear-gradient(90deg, #008fd4 0%, #2c8cb3 100%);
+  background: linear-gradient(to right, #008fd4 0%, #00aeef 100%);
 }
 .site-content .testimonial .container .section-header {
   padding-bottom: 2%;
@@ -121,9 +121,44 @@ a:active {
   border-bottom: 1px solid #45aed6;
 }
 #content .container .sidebar-wrap {
-  background: #efefef;
   border-left: none;
   padding: 0 !important;
+  margin-bottom: 7%;
+}
+#content .container .sidebar-wrap .widget-area img {
+  width: 100%;
+}
+.recent-posts-widget-with-thumbnails {
+  background: #ececec;
+}
+.rpwwt-widget {
+  border: 1px solid #adadad;
+  border-style: dashed;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+.rpwwt-widget ul {
+  list-style: outside none none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-left: 9% !important;
+  font-size: 13px;
+}
+.widget .widget-title {
+  text-align: center !important;
+}
+.widget .widget-title:before {
+  position: absolute;
+  z-index: 1;
+  bottom: -9px;
+  left: 19% !important;
+  width: 64% !important;
+  height: 2px;
+  margin: auto;
+  background: #00b3f1;
+  content: "";
 }
 .sidebar-custom ul#navigation {
   float: left;
@@ -265,7 +300,8 @@ h4.panel-title {
 }
 .entry-content p {
   text-align: left;
-  font-size: 14px !important;
+  font-size: 16px !important;
+  line-height: 1.8;
 }
 .widget li:before {
   background: none !important;
@@ -277,9 +313,35 @@ h4.panel-title {
   margin-left: -3%;
   margin-right: 0px;
 }
-#media_image-2 {
-  padding-top: 8% !important;
+.widget_media_image {
+  padding-top: 13% !important;
 }
-#media_image-2 img {
+.widget_media_image img {
   width: 100% !important;
+}
+.wpcf7 {
+  background-color: rgba(133, 149, 156, 0.13);
+  border: 1px solid rgba(185, 197, 202, 0.45);
+}
+.wpcf7-form {
+  margin: 0 auto;
+  width: 55%;
+  padding-top: 2%;
+}
+form p label {
+  font-size: 16px;
+}
+textarea {
+  width: 102%;
+}
+.application_details {
+  border: none !important;
+}
+.elp-widget {
+  border: 1px solid #ccc;
+  border-style: dashed;
+  width: 100%;
+  background: #d7e6ea;
+  font-size: 13px;
+  margin-top: 3%;
 }

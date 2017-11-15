@@ -45,7 +45,7 @@
 									<div class = "row">
 										<div class = "col-sm-8" style="text-align: left;">
 											<div class ="top-content">
-												<a href = "http://ocean.edu.vn"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<b>Ocean Edu</b></a><span>Vietnam's Biggest English Language Center</span>
+												<a href = "http://ocean.edu.vn"><b>Ocean Edu</b></a><span>Vietnam's Biggest English Language Center</span>
 											</div>
 										</div>
 										<div class = "col-sm-4" style="text-align: right;">
