@@ -18,15 +18,16 @@
  * @package WordPress
  */
 
+define( 'WPCF7_VALIDATE_CONFIGURATION', false );
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'oeemployment');
+define('DB_NAME', 'cqhd_oeemployment');
 
 /** MySQL database username */
-define('DB_USER', 'oeemployment');
+define('DB_USER', 'cqhd_oeemployme');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'oceanedu1937');
+define('DB_PASSWORD', 'JKgeo7qSRVk');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

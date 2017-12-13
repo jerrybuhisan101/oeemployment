@@ -1,7 +1,12 @@
 /* global cwp_top_ajaxload */
 /* global console */
+/* global tinyMCE */
 
 jQuery(document).ready(function() {
+    initAll();
+});
+
+function initAll(){
     jQuery('.pirate-forms-nav-tabs a').click(function (event) {
         event.preventDefault();
         jQuery(this).parent().addClass('active');
@@ -13,6 +18,7 @@ jQuery(document).ready(function() {
 
     jQuery('.pirate-forms-save-button').click(function (e) {
         e.preventDefault();
+        tinyMCE.triggerSave();
         cwpTopUpdateForm();
         return false;
     });
@@ -107,4 +113,16 @@ jQuery(document).ready(function() {
         }
     });
 
-});
+    // add visibility toggle to password type fields
+    jQuery('.pirate-forms-password-toggle').append('<span class="dashicons dashicons-visibility"></span>');
+    jQuery('.pirate-forms-password-toggle span').on('click', function(){
+        var span = jQuery(this);
+        if(span.hasClass('dashicons-visibility')){
+            span.parent().find('input[type="password"]').attr('type', 'text');
+            span.removeClass('dashicons-visibility').addClass('dashicons-hidden');
+        }else{
+            span.parent().find('input[type="text"]').attr('type', 'password');
+            span.removeClass('dashicons-hidden').addClass('dashicons-visibility');
+        }
+    });
+}

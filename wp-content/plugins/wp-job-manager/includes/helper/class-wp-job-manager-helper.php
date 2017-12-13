@@ -30,6 +30,12 @@ class WP_Job_Manager_Helper {
 	private static $_instance = null;
 
 	/**
+	 * @var bool
+	 * @since 1.29.1
+	 */
+	private static $cleared_plugin_cache = false;
+
+	/**
 	 * Allows for accessing single instance of class. Class should only be constructed once per call.
 	 *
 	 * @since  1.29.0
@@ -47,8 +53,8 @@ class WP_Job_Manager_Helper {
 	 * Loads the class, runs on init.
 	 */
 	public function init() {
-		include_once( 'class-wp-job-manager-helper-options.php' );
-		include_once( 'class-wp-job-manager-helper-api.php' );
+		include_once( dirname( __FILE__ ) . '/class-wp-job-manager-helper-options.php' );
+		include_once( dirname( __FILE__ ) . '/class-wp-job-manager-helper-api.php' );
 
 		$this->api = WP_Job_Manager_Helper_API::instance();
 
@@ -256,7 +262,7 @@ class WP_Job_Manager_Helper {
 	}
 
 	/**
-	 * Returns the plugin info for a licenced WPJM plugin.
+	 * Returns the plugin info for a licensed WPJM plugin.
 	 *
 	 * @param string $product_slug
 	 *
@@ -318,7 +324,7 @@ class WP_Job_Manager_Helper {
 	}
 
 	/**
-	 * Gets the licence key and email for a WPJM managed plugin.
+	 * Gets the license key and email for a WPJM managed plugin.
 	 *
 	 * @param string $product_slug
 	 * @return array|bool
@@ -347,7 +353,7 @@ class WP_Job_Manager_Helper {
 	}
 
 	/**
-	 * Returns list of installed WPJM plugins with managed licences indexed by product ID.
+	 * Returns list of installed WPJM plugins with managed licenses indexed by product ID.
 	 *
 	 * @param bool $active_only Only return active plugins
 	 * @return array
@@ -355,6 +361,19 @@ class WP_Job_Manager_Helper {
 	protected function get_installed_plugins( $active_only = true ) {
 		if ( ! function_exists( 'get_plugins' ) ) {
 			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+		}
+
+		/**
+		 * Clear the plugin cache on first request for installed WPJM add-on plugins.
+		 *
+		 * @since 1.29.1
+		 *
+		 * @param bool $clear_plugin_cache True if we should clear the plugin cache.
+		 */
+		if ( ! self::$cleared_plugin_cache && apply_filters( 'job_manager_clear_plugin_cache', true ) ) {
+			// Reset the plugin cache on the first call. Some plugins prematurely hydrate the cache.
+			wp_clean_plugins_cache( false );
+			self::$cleared_plugin_cache = true;
 		}
 
 		$wpjm_plugins = array();
@@ -375,7 +394,7 @@ class WP_Job_Manager_Helper {
 	}
 
 	/**
-	 * Outputs the licence management.
+	 * Outputs the license management.
 	 */
 	public function licence_output() {
 		if ( ! current_user_can( 'update_plugins' ) ) {
@@ -389,7 +408,7 @@ class WP_Job_Manager_Helper {
 	}
 
 	/**
-	 * Outputs unset licence key notices.
+	 * Outputs unset license key notices.
 	 */
 	public function licence_error_notices() {
 		foreach( $this->get_installed_plugins() as $product_slug => $plugin_data ) {
@@ -401,7 +420,7 @@ class WP_Job_Manager_Helper {
 	}
 
 	/**
-	 * Handles a request on the manage licence key screen.
+	 * Handles a request on the manage license key screen.
 	 */
 	private function handle_request() {
 		$licenced_plugins = $this->get_installed_plugins();
@@ -468,7 +487,7 @@ class WP_Job_Manager_Helper {
 	private function deactivate_licence( $product_slug ) {
 		$licence = $this->get_plugin_licence( $product_slug );
 		if ( empty( $licence['licence_key'] ) || empty( $licence['email'] ) ) {
-			$this->add_error( $product_slug, __( 'licence is not active.', 'wp-job-manager' ) );
+			$this->add_error( $product_slug, __( 'license is not active.', 'wp-job-manager' ) );
 			return;
 		}
 		$this->api->deactivate( array(

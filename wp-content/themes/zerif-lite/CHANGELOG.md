@@ -1,4 +1,22 @@
 
+### 1.8.5.32 - 09/11/2017
+**Changes:** 
+- Fix console error causing scrollreveal to not work properly
+
+### 1.8.5.31 - 07/11/2017
+**Changes:** 
+- Transformed footer icons into links to Google maps, email and telephone
+- Update PHPCS to latest version and fixed all the issues
+- Make all functions from inc/template-tags.php pluggable
+- Fix small translatable issues with some of the strings
+
+### 1.8.5.30 - 30/10/2017
+**Changes:** 
+- Updated Travis and grunt scripts to latest versions
+- Fixed small issue with the Skill circles texts not floating properly in the About section
+- Added recommendations for TranslatePress and Elementor plugins
+- Fixed problem with logo migration for old sites
+
 ### 1.8.5.29 - 02/09/2017
 **Changes:** 
 - Fixed issue with images not appearing on the blog page

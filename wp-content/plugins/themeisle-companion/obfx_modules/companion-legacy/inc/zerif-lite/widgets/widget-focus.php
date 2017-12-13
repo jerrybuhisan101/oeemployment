@@ -53,7 +53,7 @@ if ( ! class_exists( 'zerif_ourfocus' ) ) {
 
 			?>
 
-			<div class="col-lg-3 col-sm-3 focus-box">
+			<div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
 
 				<?php
 				if ( ! empty( $instance['image_uri'] ) && ( $instance['image_uri'] != 'Upload Image' ) ) {
